@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>可视化大屏</title>
+		<link href="../static/css/main.css" rel="stylesheet"/>
+		<script src	="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+		<script src="../static/js/echarts.min.js"></script>
+		<script src="../static/js/china.js"></script>
+		
+		<style>
+			
+		</style>
+	</head>
+	<body>
+		<div class="title">
+		        <div class="box">
+		            <form id="myForm" action="/update" method="post">
+		                <input type="text" class="input" placeholder="请输入商品" name="input_string">
+		                <input type="submit" value="搜索" class="button">
+		            </form>
+		        </div>
+		        <div class="text">电商抓取器</div>
+		        <div id="time">2024.6.23</div>
+		</div>
+
+		<div id="left1">
+		    <script src="../static/js/ec_left1.js"></script>
+		    </script>
+		</div>
+		<div id="left2">
+			<script src="../static/js/ec_left2.js"></script>
+		</div>
+		<div id="center1">
+			<div class = "num"><h1>123</h1></div>
+			<div class = "num"><h1>123</h1></div>
+			<div class = "num"><h1>123</h1></div>
+			<div class = "num"><h1>123</h1></div>
+			<div class="txt"><h2>单价最高</h2></div>
+			<div class="txt"><h2>单价最低</h2></div>
+			<div class="txt"><h2>平均价格</h2></div>
+			<div class="txt"><h2>总额</h2></div>
+		</div>
+		
+		
+			
+		<div id="center2">
+            <div class="map">
+                <div class="map1"></div>
+                <div class="map2"></div>
+                <div class="map3"></div>
+				<div id="China"><script src="../static/js/ec_center.js"></script></div>
+            </div>
+			<!-- <script src="../static/js/ec_center.js"></script> -->
+		</div>	
+		<div id="right1">右1</div>
+		<div id="right2">
+			<script src="../static/js/ec_right2.js"></script>
+		</div>
+		
+		<script src="../static/js/control.js"></script>
+	</body>
+</html>

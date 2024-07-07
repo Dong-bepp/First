@@ -1,0 +1,204 @@
+	
+body{
+	margin: 0;
+	background: url(../Image/bg.jpg) no-repeat;
+	background-size : cover;
+	
+}
+.title {
+    display: flex;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: url(../image/head_bg\ \(1\).png);
+
+    
+}
+.title .box{
+    flex: 1;
+    padding-top: 30px;
+    padding-left: 40px;
+}
+
+.title .box input{
+    float:left;
+	width:300px;/*宽400*/
+	height:38px;/*高38（因为文本框内外边框要占用1像素所以总体高度减2，其他盒子同理）*/
+	outline:none;
+	border:none;/*取消文本框内外边框*/
+}
+
+.title .box .button{
+    float:left;
+	width:96px;
+	height:40px;
+	color:white;
+	background-color:red;/*将按钮背景设置为红色，字体设置为白*/
+	border:none;
+	outline:none;/*取消边框和外边框将按钮边框去掉*/
+	
+}
+
+
+.title .text{
+    flex: 1;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 30px;
+    color: white;
+}
+
+.title #time{
+    flex: 1;
+    text-align: right;
+    font-size: 20px;
+    padding-top: 50px;
+    line-height: 20px;
+    color: white;
+}
+
+#left1{
+	position: absolute;
+	width: 30%;
+	height:45%;
+	top:10%;
+	left:0%;
+	/* background: #000000; */
+}
+#left2{
+	position: absolute;
+	width: 30%;
+	height:45%;
+	top:55%;
+	left:0%;
+	/* background: #000000; */
+}
+#center1{
+	position: absolute;
+	width: 40%;
+	height:30%;
+	top:10%;
+	left:30%;
+	color: white;
+	
+}
+#center2{
+	position: absolute;
+	width: 40%;
+	height:70%;
+	top:30%;
+	left:30%;
+	/* background: #000000; */
+	
+	
+}
+
+#right1{
+	position: absolute;
+	width: 30%;
+	height:45%;
+	top:10%;
+	left:70%;
+	/* background: #000000; */
+}
+#right2{
+	position: absolute;
+	width: 30%;
+	height:45%;
+	top:55%;
+	left:70%;
+	/* background: #000000; */
+}
+
+.txt{
+	width: 25%;
+	float: left;
+	font-family: "幼圆";
+	display: flex;
+	align-items: flex;
+	justify-content: center;
+}
+
+.num{
+	width: 25%;
+	float: left;
+	display: flex;
+	align-items: flex;
+	justify-content: center;
+	color: gold;
+	font-size: 20px;
+}
+
+.map .map1 {
+
+
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%; /* 防止图像超出容器 */
+    max-height: 100%; /* 防止图像超出容器 */
+    background: url(../Image/map.png) no-repeat;
+    background-size: contain ;/* 等比例缩放背景图像，保持完整显示 */
+    background-position: center;
+    opacity: 0.3;
+  }
+  .map .map2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 60%;
+    background: url(../Image/lbx.png) no-repeat;
+    animation: rotate1 15s linear infinite;
+    background-size: contain ;/* 等比例缩放背景图像，保持完整显示 */
+    background-position: center;
+  }
+
+  @keyframes rotate1 {
+    from {
+        transform: translate(-50%,-50%) rotate(0deg); /* 修正语法错误，rotate(0deg)表示不进行旋转 */
+    }
+    to {
+        transform: translate(-50%,-50%) rotate(360deg); /* 修正语法错误，rotate(360deg)表示旋转360度 */
+    }
+  }
+
+  .map .map3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65%;
+    height: 65%;
+    background: url(../Image/jt.png);
+    animation: rotate2 15s linear infinite;
+    background-size: contain ;/* 等比例缩放背景图像，保持完整显示 */
+    background-position: center;
+
+  }
+
+  @keyframes rotate2 {
+    from {
+        transform: translate(-50%,-50%) rotate(360deg); /* 修正语法错误，rotate(0deg)表示不进行旋转 */
+    }
+    to {
+        transform: translate(-50%,-50%) rotate(0deg); /* 修正语法错误，rotate(360deg)表示旋转360度 */
+    }
+  }
+  .map #China {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65%;
+    height: 65%;
+   
+   
+  
+  }
